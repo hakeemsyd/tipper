@@ -24,6 +24,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Settings view will appear")
+        let defaults = UserDefaults.standard
+        let tipIdx = defaults.integer(forKey: "default_tip")
+        tipControl.selectedSegmentIndex = tipIdx
+    }
 
 
     @IBAction func calculateTip(_ sender: AnyObject) {

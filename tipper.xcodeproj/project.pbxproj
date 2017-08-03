@@ -14,6 +14,7 @@
 		753ECADC1F32F12F00C7B932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753ECADA1F32F12F00C7B932 /* LaunchScreen.storyboard */; };
 		753ECAE71F32F12F00C7B932 /* tipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAE61F32F12F00C7B932 /* tipperTests.swift */; };
 		753ECAF21F32F12F00C7B932 /* tipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAF11F32F12F00C7B932 /* tipperUITests.swift */; };
+		753ECB001F331E9000C7B932 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		753ECAED1F32F12F00C7B932 /* tipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753ECAF11F32F12F00C7B932 /* tipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipperUITests.swift; sourceTree = "<group>"; };
 		753ECAF31F32F12F00C7B932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				753ECAD81F32F12F00C7B932 /* Assets.xcassets */,
 				753ECADA1F32F12F00C7B932 /* LaunchScreen.storyboard */,
 				753ECADD1F32F12F00C7B932 /* Info.plist */,
+				753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */,
 			);
 			path = tipper;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				753ECAD41F32F12F00C7B932 /* ViewController.swift in Sources */,
 				753ECAD21F32F12F00C7B932 /* AppDelegate.swift in Sources */,
+				753ECB001F331E9000C7B932 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +521,7 @@
 				753ECAF81F32F12F00C7B932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753ECAF91F32F12F00C7B932 /* Build configuration list for PBXNativeTarget "tipperTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				753ECAFB1F32F12F00C7B932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753ECAFC1F32F12F00C7B932 /* Build configuration list for PBXNativeTarget "tipperUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				753ECAFE1F32F12F00C7B932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
