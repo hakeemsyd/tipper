@@ -15,6 +15,7 @@
 		753ECAE71F32F12F00C7B932 /* tipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAE61F32F12F00C7B932 /* tipperTests.swift */; };
 		753ECAF21F32F12F00C7B932 /* tipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAF11F32F12F00C7B932 /* tipperUITests.swift */; };
 		753ECB001F331E9000C7B932 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */; };
+		753ECB021F33F27E00C7B932 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ECB011F33F27E00C7B932 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		753ECAF11F32F12F00C7B932 /* tipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipperUITests.swift; sourceTree = "<group>"; };
 		753ECAF31F32F12F00C7B932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		753ECB011F33F27E00C7B932 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				753ECADA1F32F12F00C7B932 /* LaunchScreen.storyboard */,
 				753ECADD1F32F12F00C7B932 /* Info.plist */,
 				753ECAFF1F331E9000C7B932 /* SettingsViewController.swift */,
+				753ECB011F33F27E00C7B932 /* Constants.swift */,
 			);
 			path = tipper;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				753ECAD41F32F12F00C7B932 /* ViewController.swift in Sources */,
 				753ECAD21F32F12F00C7B932 /* AppDelegate.swift in Sources */,
 				753ECB001F331E9000C7B932 /* SettingsViewController.swift in Sources */,
+				753ECB021F33F27E00C7B932 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

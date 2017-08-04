@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("Settings view will appear")
         let defaults = UserDefaults.standard
-        let tipIdx = defaults.integer(forKey: "default_tip")
+        let tipIdx = defaults.integer(forKey: Constants.KEY_DEFAULT_TIP)
         tipControl.selectedSegmentIndex = tipIdx
     }
 
