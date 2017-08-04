@@ -25,10 +25,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-![](assignment.gif)
+![Video Walkthrough](assignment.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [LiceCap].
 
 ## Project Analysis
 
