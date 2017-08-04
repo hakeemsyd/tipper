@@ -27,10 +27,16 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        billField.becomeFirstResponder();
         print("Settings view will appear")
         let defaults = UserDefaults.standard
         let tipIdx = defaults.integer(forKey: Constants.KEY_DEFAULT_TIP)
         tipControl.selectedSegmentIndex = tipIdx
+        
+        let locale = Locale.current
+        
+        tipLabel.text = String.init(format: "%@%.2f", locale.currencySymbol!, 0);
+        totalLabel.text = String.init(format: "%@%.2f", locale.currencySymbol!, 0);
     }
 
 
@@ -41,8 +47,11 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex];
         let total = bill + tip;
         
-        tipLabel.text = String.init(format: "$%.2f", tip);
-        totalLabel.text = String.init(format: "$%.2f", total);
+        let locale = Locale.current
+        let currencySymbol = locale.currencySymbol!
+        
+        tipLabel.text = String.init(format: "%@%.2f", currencySymbol, tip);
+        totalLabel.text = String.init(format: "%@%.2f", currencySymbol, total);
         
     }
     
