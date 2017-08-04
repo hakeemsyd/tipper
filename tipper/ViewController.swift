@@ -33,14 +33,15 @@ class ViewController: UIViewController {
         let tipIdx = defaults.integer(forKey: Constants.KEY_DEFAULT_TIP)
         tipControl.selectedSegmentIndex = tipIdx
         
-        let locale = Locale.current
-        
-        tipLabel.text = String.init(format: "%@%.2f", locale.currencySymbol!, 0);
-        totalLabel.text = String.init(format: "%@%.2f", locale.currencySymbol!, 0);
+        loadTip()
     }
 
 
     @IBAction func calculateTip(_ sender: AnyObject) {
+        loadTip()
+    }
+    
+    func loadTip(){
         let tipPercentages = [0.18,0.2,0.25]
         
         let bill = Double(billField.text!) ?? 0
@@ -52,11 +53,9 @@ class ViewController: UIViewController {
         
         tipLabel.text = String.init(format: "%@%.2f", currencySymbol, tip);
         totalLabel.text = String.init(format: "%@%.2f", currencySymbol, total);
-        
     }
     
     @IBAction func onTap(_ sender: Any) {
-        print("Hello");
         view.endEditing(true);
     }
 }
